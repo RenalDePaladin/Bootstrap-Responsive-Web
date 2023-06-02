@@ -1,0 +1,45 @@
+body p {
+  text-align: justify;
+}
+
+main section:nth-child(2) section:first-child {
+  order: 2;
+}
+
+main section:nth-child(2) section:last-child {
+  order: 1;
+}
+
+main section:last-child section:first-child {
+  order: 2;
+}
+
+main section:last-child section:last-child {
+  order: 1;
+}
+
+@media screen and (max-width: 1199.9px) {
+  main section:nth-child(2) section:first-child {
+    order: 1;
+  }
+
+  main section:nth-child(2) section:last-child {
+    order: 2;
+  }
+
+  main section:last-child section:first-child {
+    order: 1;
+  }
+
+  main section:last-child section:last-child {
+    order: 2;
+  }
+
+  p {
+    text-indent: 10mm;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+}
